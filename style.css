@@ -1,151 +1,153 @@
- *  {
-     padding: 0%;
-     margin: 0%;
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+ body{
+     padding: 0px;
+     margin: 0px;
      box-sizing: border-box;
+     background-color: rgb(6, 6, 31);
  }
+ .container {
+     padding: 0 170px 0 170px;
+     position: relative;
+     
+ }
+
+ .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(19, 19, 51);
+    top: 50%;
+    transform: translate(0, 50%);
+    border-radius: 5px;
+    padding-left: 5em;
+    
+
+}
+
+
+h1 {
+    padding-top: 5px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; }
+
+
+.slate {
+        color: hsl(0, 0%, 100%);
+        margin-top: 2em;
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        line-height: 1.8;
+    
+        font-size: 13px;
+    }    
+.decoration {
+        color: hsl(277, 64%, 61%);
+    }
+    
+ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4em;
+        color: hsl(0, 0%, 100%);
+        font-size: 15px;
+        font-family: 'Inter', sans-serif; 
+        
+     
+    }
+    
+.buks {
+        font-size: 10px;
+        font-family:'Inter', sans-serif;
+        font-weight: 100;
+        margin-top: 1em;   
+    }
+    
 
 .part2 {
     background-image: url(image-header-mobile.jpg);
-    background-color: hsl(278, 73%, 78%);
+    background-color: rgb(137, 74, 177);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 640px;
-    height: 450px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-size: cover;
+    width: 550px;
+    height: 400px;
 }
 
-main {
-    background-color: rgb(18, 18, 58);
-    margin-top: 2em;
-    margin-left: 2em;
-    margin-right: 2em;  
-}
-
-h1 {
-    padding-top: 1.5em;
-    color: hsl(0, 0%, 100%);
-    font-family: 'Inter', sans-serif;
-    font-weight: 700; 
-}
-
-.slate {
-    color: hsl(0, 0%, 100%);
-    margin-top: 4em;
-    font-family: 'Lexend Deca', sans-serif;
-    line-height: 1.8; 
-}
-
-.decoration {
-    color: hsl(277, 64%, 61%);
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5em;
-    color: hsl(0, 0%, 100%);
-    font-size: 15px;
-    font-family: 'Inter', sans-serif;  
-}
-
-.buks {
-    font-size: 10px;
-    font-family:'Inter', sans-serif;
-    font-weight: 400;
-    margin-top: 1em;   
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 5em;
-}
-
-footer {
+.bottom {
+    padding-top: 250px;
     text-align: center;
-    margin-top: 2em;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: small;
-}
-
-
-
-
-@media only screen and (max-width: 768px) {
-    .content {
-        display: flex;
-        flex-direction: column-reverse;
-        padding-left: 0%;
-        text-align: center;
-    }
-
-    .part2 {
-        width: 100%;
-        background-size: cover;
-    }
-
-    ul {
-        display: block;
-        margin-top: 3em;
-        margin-bottom: 3em;
-        font-size: 15px;
-    }
-
-    .slate {
-        margin-top: 3em;
-        font-size: 15px;
-        line-height: 1.5em;
-    }
-
-    .buks {
-        font-size: 10px;
-        margin-top: 0.5em;
-    }
+    color: white;
+    font-size: 13px;
+    font-family:'Inter', sans-serif;
 
 }
+        
 
 @media only screen and (max-width: 375px) {
 
+.container{
+    padding: 0px;
+
+}
     .content {
         display: flex;
         flex-direction: column-reverse;
         padding-left: 0%;
         text-align: center;
+        transform: unset;
+        
     }
 
     .part2 {
         width: 100%;
-        height: 300px;
+        height: 200px;
         background-size: cover;
     }
-
-
+    
     ul {
         display: block;
         margin-top: 3em;
         margin-bottom: 3em;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .slate {
-        margin-top: 3em;
+        margin-top: 1.5em;
         font-size: 12px;
         line-height: 1.5em;
-        padding: 1em;
+        padding-right: 4em;
+        padding-left: 4em;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: 250;
     }
 
     .buks {
-        font-size: 9px;
+        font-size: 8px;
         margin-top: 0.5em;
+        font-weight: 300;
     }
-
 
     h1 {
         padding-top: 1.5em;
         color: hsl(0, 0%, 100%);
         font-family: 'Inter', sans-serif;
         font-weight: 700; 
-        font-size: 25px;
+        font-size: 22px;
     }
+
+    .bottom {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 10px;
+    }  
 
 }
